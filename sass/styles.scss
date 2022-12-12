@@ -1,0 +1,62 @@
+$colors: (
+  // AQUA
+  aqua-1: rgb(36, 180, 179),
+  aqua-2: rgb(255, 255, 255),
+  aqua-4: rgb(214, 255, 241),
+  aqua-6: rgb(79, 204, 190),
+  aqua-7: rgb(128, 225, 215),
+  aqua-8: rgb(4, 98, 112),
+  aqua-9: rgb(0, 70, 79),
+  //   CORAL
+  coral-1: rgb(255, 118, 113),
+  coral-2: rgb(255, 236, 233),
+  coral-4: rgb(255, 167, 150),
+  coral-5: rgb(250, 137, 135),
+  coral-6: rgb(232, 111, 111),
+  coral-7: rgb(221, 77, 84),
+  //   MUSTARD
+  mustard-1: rgb(237, 191, 85),
+  mustard-2: rgb(242, 223, 181),
+  //   GRAY
+  gray-1: rgb(233, 248, 248),
+  gray-2: rgb(196, 211, 211),
+  gray-3: rgb(141, 156, 156),
+  gray-4: rgb(88, 103, 103),
+  // COMMON
+);
+
+// Custom properties
+
+:root {
+  @each $name, $color in $colors {
+    --#{$name}: #{$color};
+  }
+}
+
+// background-color utilities
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color !important;
+  }
+}
+
+// Color utilities
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color !important;
+  }
+}
+
+// Header
+.zuno-header {
+  background-color: #fff !important;
+  color: var(--aqua-9) !important;
+}
+
+// Footer
+.zuno-footer {
+  background-color: var(--aqua-1) !important;
+  color: #fff !important;
+}

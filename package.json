@@ -1,0 +1,15 @@
+{
+  "name": "egi-front-end-css",
+  "version": "1.0.0",
+  "description": "Common CSS for consistent styles across EGI products",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass sass/styles.scss:css/main.css -w --no-source-map",
+    "build": "sass sass/styles.scss:css/main.css  --style=compressed --no-source-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.56.2"
+  }
+}
