@@ -1,7 +1,7 @@
 $colors: (
   // AQUA
   aqua-1: rgb(36, 180, 179),
-  aqua-2: rgb(255, 255, 255),
+  aqua-2: rgb(225, 255, 255),
   aqua-4: rgb(214, 255, 241),
   aqua-6: rgb(79, 204, 190),
   aqua-7: rgb(128, 225, 215),
@@ -46,6 +46,19 @@ $colors: (
 @each $name, $color in $colors {
   .text-#{$name} {
     color: $color !important;
+  }
+}
+
+// Border Utilities
+@each $name, $color in $colors {
+  .border-color-#{$name} {
+    border-color: $color !important;
+  }
+}
+
+@each $name, $color in $colors {
+  .border-#{$name} {
+    border: 1px solid $color !important;
   }
 }
 
