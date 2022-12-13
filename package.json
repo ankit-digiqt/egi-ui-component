@@ -1,5 +1,5 @@
 {
-  "name": "egi-front-end-css",
+  "name": "egi-ui-component",
   "version": "1.0.0",
   "description": "Common CSS for consistent styles across EGI products",
   "main": "index.js",
